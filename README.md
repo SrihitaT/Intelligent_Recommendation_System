@@ -74,7 +74,7 @@ Unlike traditional systems that use a fixed "35% to pass" rule, this engine calc
 
 ## Installation & Setup
 
-1.	Clone the Repository:
+**1.	Clone the Repository:**
 
    
 git clone https://github.com/SrihitaT/Intelligent_Recommendation_System
@@ -82,7 +82,7 @@ git clone https://github.com/SrihitaT/Intelligent_Recommendation_System
 cd student-analytics-dashboard
 
 
-3.	Install Requirements:
+**3.	Install Requirements:** 
 
 
 pip install streamlit
@@ -92,7 +92,7 @@ pip install pandas
 pip install numpy
 
 
-5.	Run the Application:
+**5.	Run the Application:**
    
 streamlit run main.py
 
@@ -106,15 +106,18 @@ This project includes a standalone test_cases.py file to validate the mathematic
 3.	Quadrant Mapping: Confirming students are correctly assigned based on class means.
 
 
-To run the tests:
+**To run the tests:**
 
 python test_cases.py
 
 
 ## Project Structure
-•	app.py: Main Streamlit application and UI logic.
+•	main.py: Main Streamlit application and UI logic.
+
 •	test_cases.py: Unit tests for the intelligence engine.
+
 •	requirements.txt: List of dependencies.
+
 •	README.md: Project documentation.
 
 
