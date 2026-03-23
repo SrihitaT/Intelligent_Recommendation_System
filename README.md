@@ -35,7 +35,7 @@ In this dashboard, an Academic Anomaly is triggered if a student's current Quiz 
 
 •	Early Intervention: This logic catches the "Sudden Dip" student,someone who has high historical grades but is failing now before their overall CGPA is permanently damaged.
 
-2. ## The Significance of User-Changeable Parameters:
+## 2.  The Significance of User-Changeable Parameters:
 The sidebar allows users to adjust Risk Weights (Attendance, History, Quiz) and the Performance Benchmark. This makes the tool flexible.
 •	Lead vs. Lag Indicators: * Attendance is a Lead Indicator (predicts future failure).
 o	Quiz Scores are Current Indicators (shows immediate struggle).
@@ -45,7 +45,7 @@ o	In a Theoretical Physics course, a teacher might set Quiz Weight to 0.8 to foc
 
 •	The Normalized Formula: To ensure mathematical integrity, the system auto-normalizes these weights so they always sum to 1.0, keeping the Risk Score accurately bounded between  0 and 100
 
-3. ## Relative Benchmarking :
+## 3.  Relative Benchmarking :
 Unlike traditional systems that use a fixed "35% to pass" rule, this engine calculates risk relative to the Class Mean .
 •	Difficulty Sensing: If a quiz was exceptionally hard and the entire class averaged 40%, a student scoring 45% is technically a "High Flyer" in that context.
 •	Fairness: This prevents the system from flagging the entire class as "At Risk" during a difficult unit and instead highlights the individuals who are truly falling behind their peers.
@@ -63,11 +63,15 @@ Unlike traditional systems that use a fixed "35% to pass" rule, this engine calc
 ## Installation & Setup
 
 1.	Clone the Repository:
-git clone https://github.com/YOUR_USERNAME/student-analytics-dashboard.git
+git clone https://github.com/SrihitaT/Intelligent_Recommendation_System.git
 cd student-analytics-dashboard
-2.	Install Requirements:
-pip install streamlit pandas numpy
-3.	Run the Application:
+
+3.	Install Requirements:
+pip install streamlit
+pip install pandas
+pip install numpy
+
+4.	Run the Application:
 streamlit run app.py
 
 
@@ -81,6 +85,7 @@ This project includes a standalone test_cases.py file to validate the mathematic
 
 
 To run the tests:
+
 python test_cases.py
 
 
